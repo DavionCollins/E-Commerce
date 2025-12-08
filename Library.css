@@ -338,6 +338,7 @@ Features
     border-radius: 4px;
     overflow: hidden;
     display: flex;
+    align-items: center;
 }
 
 .book:hover .book__img{
@@ -359,13 +360,55 @@ Features
     margin-bottom: 8px;
     color: #fabf2a;
     padding-left: 20px;
+    font-size: 20px;
 }
+.book__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.book__price {
+    font-size: 20px;
+}
+
 
 .book__price--normal{
     text-decoration: line-through;
     color: #bfbfbf;
     padding-right:6px; 
     padding-left: 20px;
+    font-size: 20px;
+}
+
+.books__loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    font-size: 60px;
+    color:#7342d6;
+}
+
+.fa-spinner {
+    animation: rotate 600ms infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+       transform: rotate(0);
+    }
+    100% {
+       transform: rotate(360deg)
+    }
+}
+
+.books__loading--spinner {
+    display: none !important;
+}
+
+.books__loading .books__loading--spinner {
+    display: block !important;
 }
 
 /* 
