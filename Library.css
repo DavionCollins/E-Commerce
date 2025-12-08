@@ -443,4 +443,10 @@ footer{
 
 }
 
+@media (max-width:460px){
+    #highlights .row {
+        margin-top: 30px
+    }
+}
+
 
