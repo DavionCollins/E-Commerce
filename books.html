@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="Library.css">
+    <script src="index.js"></script>
+    <script src="books.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+</head>
+<body>
+    <section id="landing">
+        <nav>
+            <div class="nav__container">
+            <img src="E-Commerce Assets/assets/Library.svg" class="logo">
+            <ul class="nav__links">
+                <li><a href="#" class="nav__link nav__link--primary">Home</a>
+                <li><a href="#" class="nav__link nav__link--primary">Contact</a>
+                <li><a href="#" class="nav__link nav__link--primary">Books</a>
+            </ul>
+            <button class="btn__menu" onclick="openMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="menu__backdrop">
+                <button class="btn__menu btn__menu--close" onclick= "closeMenu()">
+                    <i class="fa-solid fa-times"></i>
+                </button>
+                <ul class="menu__links">
+                    <li class="menu__list">
+                        <a href="#" class="menu__link" onclick= "closeMenu()">Home</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#features" class="menu__link" onclick= "closeMenu()">Books</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#" class="menu__link no-cursor" onclick= "closeMenu()">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>  
+    </section>
+    <main id="books__main">
+        <section>
+        <div class="container">
+                <div class="row">
+                    <div class="books__header">
+                    <h2 class="section__title">All<span class="purple">&nbsp;Books</span></h2>
+                <select id="filter">
+                    <option value="" disabled selected>Sort</option>
+                    <option value="LOW_TO_HIGH" disabled selected>Price, LOW TO High</option>
+                    <option value="HIGH_TO_LOW" disabled selected>Price, HIGH TO LOW</option>
+                    <option value="RATING" disabled selected>Rating</option>
+                </select>
+                    </div>
+                    <div class="books">
+
+                    </div>
+                    </div>
+                    </div>
+            </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row row__column">
+                <a href="#">
+                <figure class="footer__logo">
+                    <img class="footer__logo--img" src="E-Commerce Assets/assets/Library.svg">
+                </figure>
+                </a>
+                <div class="footer__list">
+                    <a href="" class="footer__link">Home</a>
+                    <a href="" class="footer__link no-cursor">About</a>
+                    <a href="" class="footer__link">Books</a>
+                    <a href="" class="footer__link no-cursor">Contact</a>
+                </div>
+                <div class="footer__copyright">Copyright &copy; 2021 Library</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
